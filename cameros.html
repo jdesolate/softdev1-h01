@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Century Gothic", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://r4.wallpaperflare.com/wallpaper/834/299/692/city-lights-girl-moon-wallpaper-e178a9faa68bf35ee7e3f2afc50e43fc.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.bgimg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value to your preference */
+}
+.w3-display-container {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the overlay */
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.w3-animate-top {
+  animation: animatetop 1s;
+}
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+.w3-animate-delay {
+  animation: fadeIn 1s 1s forwards; /* 1s delay and 1s duration */
+  opacity: 0; /* Ensure it's hidden before the animation starts */
+}
+/* Custom font size adjustments */
+.custom-jumbo {
+  font-size: 80px; /* Adjust this value as needed */
+}
+.custom-large {
+  font-size: 30px; /* Adjust this value as needed */
+}
+.custom-xlarge {
+  font-size: 40px; /* Adjust this value as needed */
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large custom-xlarge">
+
+    <a href="https://www.facebook.com/MSC.STDIOS" target="">New Life</a>
+
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="custom-jumbo w3-animate-top">WELCOME HOME</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="custom-large w3-center w3-animate-delay">SHAWN CAMEROS</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Created by <a href="https://github.com/ShawnAutoMata" target="_blank">Eh</a>
+  </div>
+</div>
+
+</body>
+</html>
+
